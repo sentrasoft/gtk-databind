@@ -341,6 +341,12 @@
     <EmbeddedResource Include="Pixmaps\expander.png">
       <LogicalName>expander.png</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\datahruler.png">
+      <LogicalName>datahruler.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\datavruler.png">
+      <LogicalName>datavruler.png</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
