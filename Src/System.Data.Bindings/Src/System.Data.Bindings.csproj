@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54F958F5-7E58-4C89-9A04-8835E63B97C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Data.Bindings</RootNamespace>
+    <AssemblyName>System.Data.Bindings</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>gtk-databind.key</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConsolePause>false</ConsolePause>
+    <Execution>
+      <Execution clr-version="Net_2_0" />
+    </Execution>
+    <DocumentationFile>bin\Debug\System.Data.Bindings.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConsolePause>false</ConsolePause>
+    <Execution>
+      <Execution clr-version="Net_2_0" />
+    </Execution>
+    <DocumentationFile>bin\Release\System.Data.Bindings.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="DatabaseInterfaces.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Sources\Adaptor.cs" />
+    <Compile Include="Sources\AppNotification.cs" />
+    <Compile Include="Sources\ChildMappedProperties.cs" />
+    <Compile Include="Sources\ConnectionProvider.cs" />
+    <Compile Include="Sources\ControlAdaptor.cs" />
+    <Compile Include="Sources\DataSourceController.cs" />
+    <Compile Include="Sources\DataSourceInfo.cs" />
+    <Compile Include="Sources\FieldAttribute.cs" />
+    <Compile Include="Sources\ListAdaptor.cs" />
+    <Compile Include="Sources\MappedProperty.cs" />
+    <Compile Include="Sources\Notificator.cs" />
+    <Compile Include="Sources\Observeable.cs" />
+    <Compile Include="Sources\TypeValidator.cs" />
+    <Compile Include="Sources\ValueList.cs" />
+    <Compile Include="Sources\MappedAdaptor.cs" />
+    <Compile Include="Sources\MapAttribute.cs" />
+    <Compile Include="Sources\ObjectAdaptor.cs" />
+    <Compile Include="Sources\DatabaseProvider.cs" />
+    <Compile Include="Sources\VirtualObjectProvider.cs" />
+    <Compile Include="Sources\MappingBuilder.cs" />
+    <Compile Include="Sources\ValueMap.cs" />
+    <Compile Include="Sources\DataBinder.cs" />
+    <Compile Include="Sources\DataLinker.cs" />
+    <Compile Include="Sources\AdaptorSelectorAttribute.cs" />
+    <Compile Include="Sources\AdaptorSelector.cs" />
+    <Compile Include="Sources\DefaultAdaptorSelector.cs" />
+    <Compile Include="Sources\MSEventSupport.cs" />
+    <Compile Include="Sources\BaseNotifyPropertyChanged.cs" />
+    <Compile Include="Sources\ExtensionMethods.cs" />
+    <Compile Include="Sources\TypeConversions.cs" />
+    <Compile Include="Sources\Assembly\AssemblyEngine.cs" />
+    <Compile Include="Sources\Assembly\AssemblyDescription.cs" />
+    <Compile Include="Sources\Assembly\AssemblyList.cs" />
+    <Compile Include="Sources\Assembly\AssemblyDevelopmentInformation.cs" />
+    <Compile Include="Sources\Assembly\Interfaces.cs" />
+    <Compile Include="Sources\Assembly\TypeDevelopmentInformation.cs" />
+    <Compile Include="Sources\Assembly\MemberDevelopmentInformation.cs" />
+    <Compile Include="Sources\Assembly\DevelopmentDescriptionCollection.cs" />
+    <Compile Include="Sources\Assembly\DevelopmentInformationItem.cs" />
+    <Compile Include="Sources\Attributes\PropertyDescriptionAttribute.cs" />
+    <Compile Include="Sources\Attributes\Interfaces.cs" />
+    <Compile Include="Sources\Attributes\ExtensionMethods.cs" />
+    <Compile Include="Sources\Attributes\PropertyRangeAttribute.cs" />
+    <Compile Include="Sources\Attributes\WidgetFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\TypeWidgetFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\ItemTitleAttribute.cs" />
+    <Compile Include="Sources\Attributes\ItemHintAttribute.cs" />
+    <Compile Include="Sources\Attributes\ItemIconAttribute.cs" />
+    <Compile Include="Sources\Attributes\ToDoAttribute.cs" />
+    <Compile Include="Sources\Attributes\NeedsOptimizationAttribute.cs" />
+    <Compile Include="Sources\Attributes\DevelopmentInformationAttribute.cs" />
+    <Compile Include="Sources\Attributes\BugAttribute.cs" />
+    <Compile Include="Sources\Attributes\NeedsRewriteAttribute.cs" />
+    <Compile Include="Sources\Attributes\NeedsRemovalAttribute.cs" />
+    <Compile Include="Sources\Attributes\MissingImplementationAttribute.cs" />
+    <Compile Include="Sources\Attributes\PlannedImplementationAttribute.cs" />
+    <Compile Include="Sources\Attributes\RelatedBugAttribute.cs" />
+    <Compile Include="Sources\Attributes\CellFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\TypeCellFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\ColumnViewAttribute.cs" />
+    <Compile Include="Sources\Cached\CachedProperty.cs" />
+    <Compile Include="Sources\Cached\BufferClippingInformation.cs" />
+    <Compile Include="Sources\Cached\Interfaces.cs" />
+    <Compile Include="Sources\Cached\BufferClippingList.cs" />
+    <Compile Include="Sources\Cached\PagedBufferDefaults.cs" />
+    <Compile Include="Sources\Collections\ObserveableList.cs" />
+    <Compile Include="Sources\Collections\ObjectQueue.cs" />
+    <Compile Include="Sources\Collections\ObserveableArrayList.cs" />
+    <Compile Include="Sources\Collections\ObserveableStringCollection.cs" />
+    <Compile Include="Sources\Collections\ICacheList.cs" />
+    <Compile Include="Sources\Collections\CachedPropertyValueAttribute.cs" />
+    <Compile Include="Sources\Collections\HierarchicalList.cs" />
+    <Compile Include="Sources\Collections\ObservableList.cs" />
+    <Compile Include="Sources\Collections\ObservableArrayList.cs" />
+    <Compile Include="Sources\Collections\BaseClientObservableListView.cs" />
+    <Compile Include="Sources\Collections\ObservableFilterListView.cs" />
+    <Compile Include="Sources\Collections\Interfaces.cs" />
+    <Compile Include="Sources\Collections\Exceptions.cs" />
+    <Compile Include="Sources\Collections\ObservableSortListView.cs" />
+    <Compile Include="Sources\Collections\Generic\GenericObservableList.cs" />
+    <Compile Include="Sources\Collections\Generic\Exceptions.cs" />
+    <Compile Include="Sources\Collections\Generic\ExtensionMethods.cs" />
+    <Compile Include="Sources\Collections\Generic\AVLTreeSort.cs" />
+    <Compile Include="Sources\Collections\Generic\Interfaces.cs" />
+    <Compile Include="Sources\Collections\Generic\BaseAVLTreeSort.cs" />
+    <Compile Include="Sources\Collections\Generic\AVLTreeSortNode.cs" />
+    <Compile Include="Sources\Collections\Generic\SortEventArgs.cs" />
+    <Compile Include="Sources\Collections\Generic\MultiInstanceAVLTreeSortNode.cs" />
+    <Compile Include="Sources\Collections\Generic\SingleInstanceAVLTreeSortNode.cs" />
+    <Compile Include="Sources\Collections\Generic\GenericObservableFilterListView.cs" />
+    <Compile Include="Sources\Collections\Generic\BaseGenericClientObservableListView.cs" />
+    <Compile Include="Sources\Collections\Generic\GenericObservableSortListView.cs" />
+    <Compile Include="Sources\Database\Interfaces.cs" />
+    <Compile Include="Sources\Database\TypedDataRowCollection.cs" />
+    <Compile Include="Sources\Database\TypedDataTable.cs" />
+    <Compile Include="Sources\Database\BaseTypedDataRow.cs" />
+    <Compile Include="Sources\Database\ExtensionMethods.cs" />
+    <Compile Include="Sources\Database\DbObservableList.cs" />
+    <Compile Include="Sources\ErrorHandling\DebugInformationQueue.cs" />
+    <Compile Include="Sources\ErrorHandling\Debug.cs" />
+    <Compile Include="Sources\ErrorHandling\Interfaces.cs" />
+    <Compile Include="Sources\ErrorHandling\DebugNotification.cs" />
+    <Compile Include="Sources\ErrorHandling\ConsoleDebug.cs" />
+    <Compile Include="Sources\Factory\WidgetFactory.cs" />
+    <Compile Include="Sources\Factory\FactoryInvokerClass.cs" />
+    <Compile Include="Sources\Factory\FactoryInvocationArgs.cs" />
+    <Compile Include="Sources\Factory\FactoryExtensionMethods.cs" />
+    <Compile Include="Sources\Factory\Interfaces.cs" />
+    <Compile Include="Sources\Factory\CellFactoryInvokerClass.cs" />
+    <Compile Include="Sources\Factory\WidgetFactoryTheme.cs" />
+    <Compile Include="Sources\Resources\PictureResourceStore.cs" />
+    <Compile Include="Sources\Resources\NamedObject.cs" />
+    <Compile Include="Sources\Resources\NamedPictureResource.cs" />
+    <Compile Include="Sources\Resources\ResourceEnumerator.cs" />
+    <Compile Include="Sources\Resources\ExtensionMethods.cs" />
+    <Compile Include="Sources\Resources\Exceptions.cs" />
+    <Compile Include="Sources\Resources\Interfaces.cs" />
+    <Compile Include="Sources\RuntimeAttributes\RuntimeAttributesObject.cs" />
+    <Compile Include="Sources\RuntimeAttributes\Interfaces.cs" />
+    <Compile Include="Sources\RuntimeAttributes\RuntimeAttributeList.cs" />
+    <Compile Include="Sources\RuntimeAttributes\RuntimeAttribute.cs" />
+    <Compile Include="Sources\Utilities\Interfaces.cs" />
+    <Compile Include="Sources\Utilities\VersionNumber.cs" />
+    <Compile Include="Sources\Utilities\Config\ApplicationPreferences.cs" />
+    <Compile Include="Sources\Utilities\Config\ConfigFile.cs" />
+    <Compile Include="Sources\Utilities\Config\ConfigFolder.cs" />
+    <Compile Include="Sources\VirtualObjects\UniqueVirtualObject.cs" />
+    <Compile Include="Sources\VirtualObjects\UniqueVirtualObjectType.cs" />
+    <Compile Include="Sources\VirtualObjects\VirtualMember.cs" />
+    <Compile Include="Sources\VirtualObjects\VirtualObject.cs" />
+    <Compile Include="Sources\VirtualObjects\VirtualObjectType.cs" />
+    <Compile Include="Sources\VirtualObjects\VirtualObjects.cs" />
+    <Compile Include="Sources\VirtualObjects\VirtualProperty.cs" />
+    <Compile Include="Sources\VirtualObjects\Interfaces.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sources\" />
+    <Folder Include="Sources\Assembly\" />
+    <Folder Include="Sources\Attributes\" />
+    <Folder Include="Sources\Cached\" />
+    <Folder Include="Sources\Collections\" />
+    <Folder Include="Sources\Collections\Generic\" />
+    <Folder Include="Sources\Database\" />
+    <Folder Include="Sources\ErrorHandling\" />
+    <Folder Include="Sources\Factory\" />
+    <Folder Include="Sources\Resources\" />
+    <Folder Include="Sources\RuntimeAttributes\" />
+    <Folder Include="Sources\Utilities\" />
+    <Folder Include="Sources\Utilities\Config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
