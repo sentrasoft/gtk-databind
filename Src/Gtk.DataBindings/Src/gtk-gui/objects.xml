@@ -304,7 +304,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataCheckButton" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.CheckButton">
+  <object type="Gtk.DataBindings.DataCheckButton" icon="checkbutton.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.CheckButton">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
@@ -328,7 +328,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataRadioButton" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.RadioButton">
+  <object type="Gtk.DataBindings.DataRadioButton" icon="radiobutton.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.RadioButton">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
@@ -621,7 +621,7 @@
     </itemgroups>
     <signals />
   </object>
-  <object type="Gtk.DataBindings.DataComboBox" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
+  <object type="Gtk.DataBindings.DataComboBox" icon="combo.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
@@ -671,7 +671,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataComboBoxEntry" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBoxEntry">
+  <object type="Gtk.DataBindings.DataComboBoxEntry" icon="combo.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBoxEntry">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
@@ -810,13 +810,14 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataTextView" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.TextView">
+  <object type="Gtk.DataBindings.DataTextView" icon="textview.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.TextView">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
         <property name="Mappings" />
         <property name="InheritedBoundaryDataSource" />
         <property name="BoundaryMappings" />
+        <property name="Editable" />
       </itemgroup>
       <itemgroup label="IAdaptableContainer Properties">
         <property name="InheritedDataSource" />
@@ -840,13 +841,15 @@
         <property name="InheritedBoundaryDataSource" />
         <property name="BoundaryMappings" />
         <property name="Mappings" />
-      </itemgroup>
-      <itemgroup label="DataAutoWidget Properties">
         <property name="Editable" />
         <property name="WidgetFilter" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
         <property name="InheritedDataSource" />
         <property name="InheritedBoundaryDataSource" />
         <property name="BoundaryMappings" />
+        <property name="Editable" />
+        <property name="WidgetFilter" />
       </itemgroup>
     </itemgroups>
     <signals />
@@ -866,13 +869,14 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataDateEntry" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.DataBindings.DateEntry">
+  <object type="Gtk.DataBindings.DataDateEntry" icon="calendar.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.DataBindings.DateEntry">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedDataSource" />
         <property name="Mappings" />
         <property name="InheritedBoundaryDataSource" />
         <property name="BoundaryMappings" />
+        <property name="Editable" />
       </itemgroup>
       <itemgroup label="IAdaptableContainer Properties">
         <property name="InheritedDataSource" />
@@ -905,7 +909,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataEnumComboBox" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
+  <object type="Gtk.DataBindings.DataEnumComboBox" icon="combo.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedBoundaryDataSource" />
@@ -942,7 +946,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataRadioGroup" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Bin">
+  <object type="Gtk.DataBindings.DataRadioGroup" icon="radiobutton.png" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Bin">
     <itemgroups>
       <itemgroup name="Data Binding" label="Data Binding">
         <property name="InheritedBoundaryDataSource" />

@@ -347,6 +347,9 @@
     <EmbeddedResource Include="Pixmaps\datavruler.png">
       <LogicalName>datavruler.png</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\custom.png">
+      <LogicalName>custom.png</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
