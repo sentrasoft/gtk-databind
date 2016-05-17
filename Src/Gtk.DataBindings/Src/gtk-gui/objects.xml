@@ -67,7 +67,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataVRuler" palette-category="Databound Widgets" allow-children="false">
+  <object type="Gtk.DataBindings.DataVRuler" icon="datavruler.png" palette-category="Databound Widgets" allow-children="false">
     <itemgroups>
       <itemgroup ref="Gtk.Widget" />
       <itemgroup name="Data Binding" label="Data Binding">
@@ -90,7 +90,7 @@
       </itemgroup>
     </signals>
   </object>
-  <object type="Gtk.DataBindings.DataHRuler" palette-category="Databound Widgets" allow-children="false">
+  <object type="Gtk.DataBindings.DataHRuler" icon="datahruler.png" palette-category="Databound Widgets" allow-children="false">
     <itemgroups>
       <itemgroup ref="Gtk.Widget" />
       <itemgroup name="Data Binding" label="Data Binding">
