@@ -1,0 +1,999 @@
+<objects attr-sync="on">
+  <object type="Gtk.DataBindings.DataEntry" palette-category="Databound Widgets" allow-children="false" icon="entry.png" base-type="Gtk.Entry">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="Editable" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataEntry Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataCalendar" palette-category="Databound Widgets" allow-children="false" icon="calendar.png" base-type="Gtk.Calendar">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataCalendar Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataLabel" palette-category="Databound Widgets" allow-children="false" icon="label.png" base-type="Gtk.Label">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataLabel Properties">
+        <property name="Important" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataLabel Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataVRuler" palette-category="Databound Widgets" allow-children="false">
+    <itemgroups>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup label="DataVRuler Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataHRuler" palette-category="Databound Widgets" allow-children="false">
+    <itemgroups>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup label="DataHRuler Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataSpinButton" palette-category="Databound Widgets" init-properties="Lower Upper StepIncrement" allow-children="false" icon="spinbutton.png" base-type="Gtk.SpinButton">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataSpinButton Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataRange" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Range">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataRange Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataButton" palette-category="Databound Widgets" allow-children="false" icon="button.png" base-type="Gtk.Button">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IBoundedContainer Properties">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataColorButton" palette-category="Databound Widgets" allow-children="false" icon="colorbutton.png" base-type="Gtk.ColorButton">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataColorButton Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataColorSelection" palette-category="Databound Widgets" allow-children="false" icon="colorselection.png" base-type="Gtk.ColorSelection">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataColorSelection Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataExpander" palette-category="Databound Containers" icon="expander.png" base-type="Gtk.Expander">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataExpander Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataFileChooserButton" palette-category="Databound Widgets" allow-children="false" icon="fileselection.png">
+    <itemgroups>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup ref="Gtk.Widget" />
+      <itemgroup label="DataFileChooserButton Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataFileChooserWidget" palette-category="Databound Widgets" allow-children="false" icon="fileselection.png" base-type="Gtk.FileChooserWidget">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataFileChooserWidget Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataTreeView" palette-category="Databound Widgets" allow-children="false" icon="treeview.png" base-type="Gtk.TreeView">
+    <itemgroups>
+      <itemgroup label="DataTreeView Properties">
+        <property name="CursorPointsEveryType" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="ColumnMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataTreeView Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+        <signal name="CellDescription" />
+        <signal name="IsVisibleInFilter" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataCheckButton" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.CheckButton">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataCheckButton Properties">
+        <property name="Editable" />
+        <property name="AutomaticTitle" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataCheckButton Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataRadioButton" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.RadioButton">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IBoundedContainer Properties">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataRadioButton Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataHBox" palette-category="Databound Containers" icon="hbox.png" base-type="Gtk.HBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataVBox" palette-category="Databound Containers" icon="vbox.png" base-type="Gtk.VBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataTable" palette-category="Databound Containers" icon="table.png" init-properties="NRows NColumns Homogeneous" base-type="Gtk.Table">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataImage" palette-category="Databound Widgets" icon="image.png" base-type="Gtk.Image">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IBoundedContainer Properties">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataImage Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataProgressBar" palette-category="Databound Widgets" allow-children="false" icon="progressbar.png" base-type="Gtk.ProgressBar">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataProgressBar Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataVScale" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.VScale">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataVScale Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataHScale" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.HScale">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataHScale Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataDrawingArea" palette-category="Databound Widgets" allow-children="false" icon="drawingarea.png" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataDrawingArea Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataFrame" palette-category="Databound Containers" icon="frame.png" base-type="Gtk.Frame">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataHButtonBox" palette-category="Databound Containers" allow-children="true" icon="hbuttonbox.png" base-type="Gtk.HButtonBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataHPaned" palette-category="Databound Containers" allow-children="true" icon="hpaned.png" base-type="Gtk.HPaned">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataToolbar" palette-category="Databound Containers" icon="toolbar.png" base-type="Gtk.Toolbar">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataVButtonBox" palette-category="Databound Containers" icon="vbuttonbox.png" base-type="Gtk.VButtonBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataVPaned" palette-category="Databound Containers" base-type="Gtk.VPaned">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+  </object>
+  <object type="Gtk.DataBindings.DataRuler" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Widget">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataRuler Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataButtonBox" palette-category="Databound Containers" allow-children="false" base-type="Gtk.ButtonBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals />
+  </object>
+  <object type="Gtk.DataBindings.DataComboBox" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="ColumnMappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataComboBox Properties">
+        <property name="CursorPointsEveryType" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataComboBox Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+        <signal name="CellDescription" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataIconView" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.IconView">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="ColumnMappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataIconView Properties">
+        <property name="CursorPointsEveryType" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataIconView Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+        <signal name="CellDescription" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataComboBoxEntry" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBoxEntry">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="ColumnMappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataComboBoxEntry Properties">
+        <property name="CursorPointsEveryType" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataComboBoxEntry Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+        <signal name="CellDescription" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.TimeEntry" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup label="TimeEntry Properties">
+        <property name="HasDropDown" />
+        <property name="HasClearButton" />
+        <property name="HasCalculator" />
+        <property name="EditSeconds" />
+        <property name="EditMilliseconds" />
+        <property name="Editable" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="TimeEntry Signals">
+        <signal name="StartCalculator" />
+        <signal name="ClearData" />
+        <signal name="DropDown" />
+        <signal name="TimeChanged" />
+        <signal name="PropertyChanged" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.HDrawingArea" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups />
+    <signals></signals>
+  </object>
+  <object type="Gtk.DataBindings.DateEntry" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup label="DateEntry Properties">
+        <property name="HasDropDown" />
+        <property name="HasClearButton" />
+        <property name="HasCalculator" />
+        <property name="Editable" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DateEntry Signals">
+        <signal name="StartCalculator" />
+        <signal name="ClearData" />
+        <signal name="DropDown" />
+        <signal name="DateChanged" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.LinkLabel" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup label="LinkLabel Properties">
+        <property name="LinkText" />
+        <property name="LinkURL" />
+        <property name="IconVisible" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="LinkLabel Signals">
+        <signal name="LinkClicked" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataEventBox" palette-category="Databound Containers" allow-children="false" base-type="Gtk.EventBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals />
+  </object>
+  <object type="Gtk.DataBindings.DataLayoutBox" palette-category="Databound Containers" allow-children="false" base-type="Gtk.DataBindings.DataTable">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals />
+  </object>
+  <object type="Gtk.ExtraWidgets.VDrawingArea" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups />
+    <signals></signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.MonthViewCalendarWidget" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups />
+    <signals>
+      <itemgroup label="MonthViewCalendarWidget Signals">
+        <signal name="DayDescriptionRequest" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataTitleLabel" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Label">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="DataTitleLabel Properties">
+        <property name="Important" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataTitleLabel Signals">
+        <signal name="CustomGetData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataTextView" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.TextView">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="Editable" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataTextView Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataAutoWidget" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.EventBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="Mappings" />
+      </itemgroup>
+      <itemgroup label="DataAutoWidget Properties">
+        <property name="Editable" />
+        <property name="WidgetFilter" />
+        <property name="InheritedDataSource" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals />
+  </object>
+  <object type="Gtk.ExtraWidgets.ColorLabel" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup label="ColorLabel Properties">
+        <property name="SmallFonts" />
+        <property name="ResolveColorNames" />
+        <property name="ColorName" />
+        <property name="NameVisible" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="ColorLabel Signals">
+        <signal name="ColorClicked" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataDateEntry" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.DataBindings.DateEntry">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+      </itemgroup>
+      <itemgroup label="IAdaptableContainer Properties">
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="Editable" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataDateEntry Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.HorizontalCombo" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.EventBox">
+    <itemgroups>
+      <itemgroup label="HorizontalCombo Properties">
+        <property name="SeparatorLines" />
+        <property name="Homogeneous" />
+        <property name="Hovered" />
+        <property name="Selected" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="HorizontalCombo Signals">
+        <signal name="CellHovered" />
+        <signal name="CellSelected" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataEnumComboBox" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.ComboBox">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+      <itemgroup label="IBoundedContainer Properties">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataEnumComboBox Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.ModeButton" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.EventBox">
+    <itemgroups>
+      <itemgroup label="ModeButton Properties">
+        <property name="Selected" />
+        <property name="Hovered" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="ModeButton Signals">
+        <signal name="ModeAdded" />
+        <signal name="ModeRemoved" />
+        <signal name="ModeChanged" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.DataBindings.DataRadioGroup" palette-category="Databound Widgets" allow-children="false" base-type="Gtk.Bin">
+    <itemgroups>
+      <itemgroup name="Data Binding" label="Data Binding">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+      <itemgroup label="IBoundedContainer Properties">
+        <property name="InheritedBoundaryDataSource" />
+        <property name="BoundaryMappings" />
+        <property name="InheritedDataSource" />
+        <property name="Mappings" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="DataRadioGroup Signals">
+        <signal name="CustomGetData" />
+        <signal name="CustomPostData" />
+        <signal name="Toggled" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.PrelightAwareImage" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.EventBox">
+    <itemgroups>
+      <itemgroup label="PrelightAwareImage Properties">
+        <property name="MouseOver" />
+        <property name="InternalMouseTracking" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="PrelightAwareImage Signals">
+        <signal name="PropertyChanged" />
+        <signal name="Clicked" />
+      </itemgroup>
+    </signals>
+  </object>
+  <object type="Gtk.ExtraWidgets.IPv4Entry" palette-category="Extra Gtk Widgets" allow-children="false" base-type="Gtk.DrawingArea">
+    <itemgroups>
+      <itemgroup label="IPv4Entry Properties">
+        <property name="HasDropDown" />
+        <property name="Editable" />
+        <property name="ClearEnabled" />
+        <property name="DropDownEnabled" />
+      </itemgroup>
+    </itemgroups>
+    <signals>
+      <itemgroup label="IPv4Entry Signals">
+        <signal name="ClearData" />
+        <signal name="StartCalculator" />
+        <signal name="DropDown" />
+        <signal name="PropertyChanged" />
+      </itemgroup>
+    </signals>
+  </object>
+</objects>

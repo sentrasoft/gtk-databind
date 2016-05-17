@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D85E430-325A-4532-A123-BF28F9644DB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Gtk.DataBindings</RootNamespace>
+    <ApplicationIcon>.</ApplicationIcon>
+    <AssemblyName>gtk-databind</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>gtk-databind.key</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <Execution>
+      <Execution clr-version="Net_2_0" />
+    </Execution>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConsolePause>false</ConsolePause>
+    <Execution>
+      <Execution clr-version="Net_2_0" />
+    </Execution>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\gtk-databind.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="gtk-gui\Gtk.ExtraWidgets.DatePickerWindow.cs" />
+    <Compile Include="gtk-gui\Gtk.ExtraWidgets.DateCalculatorWindow.cs" />
+    <Compile Include="gtk-gui\Gtk.DataBindings.DataRadioGroup.cs" />
+    <Compile Include="Sources\GtkAdaptor.cs" />
+    <Compile Include="Sources\GtkControlAdaptor.cs" />
+    <Compile Include="Sources\Interfaces.cs" />
+    <Compile Include="Sources\Notificator.cs" />
+    <Compile Include="Sources\GtkListAdaptor.cs" />
+    <Compile Include="Sources\Exceptions.cs" />
+    <Compile Include="Sources\GtkAdaptorSelector.cs" />
+    <Compile Include="Sources\DevelopmentDescriptions.cs" />
+    <Compile Include="Sources\ExtensionMethods.cs" />
+    <Compile Include="Sources\GtkResources.cs" />
+    <Compile Include="Sources\Attributes\QueryModelAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkWidgetFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkTypeWidgetFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkItemIconAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkItemIconFileAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkCellFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\Attributes\GtkTypeCellFactoryProviderAttribute.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRenderer.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererText.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererToggle.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererCombo.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererPixbuf.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererProgress.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererSpin.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererCurrency.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererCustomText.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererDate.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererTime.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererDrawingCell.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererSimpleColor.cs" />
+    <Compile Include="Sources\CellRenderers\CellRendererExtensionMethods.cs" />
+    <Compile Include="Sources\CellRenderers\MappedCellRendererIp.cs" />
+    <Compile Include="Sources\ExtraWidgets\flashingwidgets\FlashingWidgets.cs" />
+    <Compile Include="Sources\ExtraWidgets\flashingwidgets\WidgetFlasher.cs" />
+    <Compile Include="Sources\ExtraWidgets\BasicUtilities.cs" />
+    <Compile Include="Sources\ExtraWidgets\DateCalculatorWindow.cs" />
+    <Compile Include="Sources\ExtraWidgets\DatePickerWindow.cs" />
+    <Compile Include="Sources\ExtraWidgets\Interfaces.cs" />
+    <Compile Include="Sources\ExtraWidgets\PrelightAwareImage.cs" />
+    <Compile Include="Sources\ExtraWidgets\ThemedStockItems.cs" />
+    <Compile Include="Sources\ExtraWidgets\HorizontalCombo.cs" />
+    <Compile Include="Sources\ExtraWidgets\ChameleonTemplates.cs" />
+    <Compile Include="Sources\ExtraWidgets\TransparentSelectionEventBox.cs" />
+    <Compile Include="Sources\ExtraWidgets\HComboCellEnum.cs" />
+    <Compile Include="Sources\ExtraWidgets\HComboCell.cs" />
+    <Compile Include="Sources\ExtraWidgets\HComboCellWidget.cs" />
+    <Compile Include="Sources\ExtraWidgets\HComboCellText.cs" />
+    <Compile Include="Sources\ExtraWidgets\DateEntry.cs" />
+    <Compile Include="Sources\ExtraWidgets\CustomSpinEntry.cs" />
+    <Compile Include="Sources\ExtraWidgets\ClipboardHelper.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellPixbuf.cs" />
+    <Compile Include="Sources\ExtraWidgets\HDrawingArea.cs" />
+    <Compile Include="Sources\ExtraWidgets\ExtraWidgetsExtensionMethods.cs" />
+    <Compile Include="Sources\ExtraWidgets\CellDrawingArea.cs" />
+    <Compile Include="Sources\ExtraWidgets\DrawingCellCollection.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCell.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellFrame.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellGdkColorFrame.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellText.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellContent.cs" />
+    <Compile Include="Sources\ExtraWidgets\VDrawingArea.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellNull.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellEditText.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellBox.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellHBox.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellVBox.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellBin.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellVSeparator.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellHSeparator.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellProgress.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellArrow.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellButton.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellPaintedBox.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellHelper.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellThemedBin.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellEntry.cs" />
+    <Compile Include="Sources\ExtraWidgets\TimeEntry.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellExtensionMethods.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellActivePixbuf.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellGtkState.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellXSpacing.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellYSpacing.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellComboArrow.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\CellRectangle.cs" />
+    <Compile Include="Sources\ExtraWidgets\IPv4Entry.cs" />
+    <Compile Include="Sources\ExtraWidgets\MonthViewCalendarWidget.cs" />
+    <Compile Include="Sources\ExtraWidgets\cells\DrawingCellGtkStateBin.cs" />
+    <Compile Include="Sources\ExtraWidgets\LinkLabel.cs" />
+    <Compile Include="Sources\ExtraWidgets\ColorLabel.cs" />
+    <Compile Include="Sources\ExtraWidgets\ColorNames.cs" />
+    <Compile Include="Sources\Factory\GtkWidgetFactory.cs" />
+    <Compile Include="Sources\Factory\GtkFactoryInvocationArgs.cs" />
+    <Compile Include="Sources\OtherWidgets\ModeButton.cs" />
+    <Compile Include="Sources\TreeModels\CustomTreeModel.cs" />
+    <Compile Include="Sources\TreeModels\IListTreeModel.cs" />
+    <Compile Include="Sources\TreeModels\MappingsImplementor.cs" />
+    <Compile Include="Sources\TreeModels\ModelSelector.cs" />
+    <Compile Include="Sources\TreeModels\QueryImplementor.cs" />
+    <Compile Include="Sources\TreeModels\DataTableTreeModel.cs" />
+    <Compile Include="Sources\TreeModels\DataViewTreeModel.cs" />
+    <Compile Include="Sources\TreeModels\QueryModelDescription.cs" />
+    <Compile Include="Sources\TreeModels\NullTreeModel.cs" />
+    <Compile Include="Sources\TreeModels\AssemblyDevelopmentInformationQueryModel.cs" />
+    <Compile Include="Sources\TreeModels\HierarchicalShellQueryModel.cs" />
+    <Compile Include="Sources\TreeModels\LinearListShellQueryModel.cs" />
+    <Compile Include="Sources\TreeModels\MemberDevelopmentInformationQueryModel.cs" />
+    <Compile Include="Sources\TreeModels\ArrayQueryModel.cs" />
+    <Compile Include="Sources\Widgets\DataBin.cs" />
+    <Compile Include="Sources\Widgets\DataBox.cs" />
+    <Compile Include="Sources\Widgets\DataButton.cs" />
+    <Compile Include="Sources\Widgets\DataButtonBox.cs" />
+    <Compile Include="Sources\Widgets\DataCalendar.cs" />
+    <Compile Include="Sources\Widgets\DataCheckButton.cs" />
+    <Compile Include="Sources\Widgets\DataCheckMenuItem.cs" />
+    <Compile Include="Sources\Widgets\DataColorButton.cs" />
+    <Compile Include="Sources\Widgets\DataColorSelection.cs" />
+    <Compile Include="Sources\Widgets\DataComboBox.cs" />
+    <Compile Include="Sources\Widgets\DataComboBoxEntry.cs" />
+    <Compile Include="Sources\Widgets\DataDialog.cs" />
+    <Compile Include="Sources\Widgets\DataDrawingArea.cs" />
+    <Compile Include="Sources\Widgets\DataEntry.cs" />
+    <Compile Include="Sources\Widgets\DataExpander.cs" />
+    <Compile Include="Sources\Widgets\DataFileChooserButton.cs" />
+    <Compile Include="Sources\Widgets\DataFileChooserWidget.cs" />
+    <Compile Include="Sources\Widgets\DataFixed.cs" />
+    <Compile Include="Sources\Widgets\DataFrame.cs" />
+    <Compile Include="Sources\Widgets\DataHBox.cs" />
+    <Compile Include="Sources\Widgets\DataHButtonBox.cs" />
+    <Compile Include="Sources\Widgets\DataHPaned.cs" />
+    <Compile Include="Sources\Widgets\DataHRuler.cs" />
+    <Compile Include="Sources\Widgets\DataHScale.cs" />
+    <Compile Include="Sources\Widgets\DataLabel.cs" />
+    <Compile Include="Sources\Widgets\DataProgressBar.cs" />
+    <Compile Include="Sources\Widgets\DataRange.cs" />
+    <Compile Include="Sources\Widgets\DataRuler.cs" />
+    <Compile Include="Sources\Widgets\DataSpinButton.cs" />
+    <Compile Include="Sources\Widgets\DataTable.cs" />
+    <Compile Include="Sources\Widgets\DataToolbar.cs" />
+    <Compile Include="Sources\Widgets\DataVBox.cs" />
+    <Compile Include="Sources\Widgets\DataVButtonBox.cs" />
+    <Compile Include="Sources\Widgets\DataVPaned.cs" />
+    <Compile Include="Sources\Widgets\DataVRuler.cs" />
+    <Compile Include="Sources\Widgets\DataVScale.cs" />
+    <Compile Include="Sources\Widgets\DataWindow.cs" />
+    <Compile Include="Sources\Widgets\DragObjectData.cs" />
+    <Compile Include="Sources\Widgets\NamedCellRendererList.cs" />
+    <Compile Include="Sources\Widgets\DataIconView.cs" />
+    <Compile Include="Sources\Widgets\DataRadioButton.cs" />
+    <Compile Include="Sources\Widgets\DataImage.cs" />
+    <Compile Include="Sources\Widgets\ActionController.cs" />
+    <Compile Include="Sources\Widgets\ToolbarControllerSettings.cs" />
+    <Compile Include="Sources\Widgets\ToolbarController.cs" />
+    <Compile Include="Sources\Widgets\DataTextView.cs" />
+    <Compile Include="Sources\Widgets\DataTreeView.cs" />
+    <Compile Include="Sources\Widgets\DataTitleLabel.cs" />
+    <Compile Include="Sources\Widgets\DataLayoutBox.cs" />
+    <Compile Include="Sources\Widgets\DataEnumComboBox.cs" />
+    <Compile Include="Sources\Widgets\DataRadioGroup.cs" />
+    <Compile Include="Sources\Widgets\DataDateEntry.cs" />
+    <Compile Include="Sources\Widgets\DataAutoWidget.cs" />
+    <Compile Include="Sources\Widgets\DataEventBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gtk-gui\objects.xml">
+      <LogicalName>objects.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\button.png">
+      <LogicalName>button.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\calendar.png">
+      <LogicalName>calendar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\checkbutton.png">
+      <LogicalName>checkbutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\colorbutton.png">
+      <LogicalName>colorbutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\colorselection.png">
+      <LogicalName>colorselection.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\combo.png">
+      <LogicalName>combo.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\dialog.png">
+      <LogicalName>dialog.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\drawingarea.png">
+      <LogicalName>drawingarea.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\entry.png">
+      <LogicalName>entry.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\fileselection.png">
+      <LogicalName>fileselection.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\fontbutton.png">
+      <LogicalName>fontbutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\fontselection.png">
+      <LogicalName>fontselection.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\fontselectiondialog.png">
+      <LogicalName>fontselectiondialog.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\frame.png">
+      <LogicalName>frame.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\hbox.png">
+      <LogicalName>hbox.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\hbuttonbox.png">
+      <LogicalName>hbuttonbox.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\hpaned.png">
+      <LogicalName>hpaned.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\hscrollbar.png">
+      <LogicalName>hscrollbar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\image.png">
+      <LogicalName>image.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\label.png">
+      <LogicalName>label.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\menubar.png">
+      <LogicalName>menubar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\notebook.png">
+      <LogicalName>notebook.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\optionmenu.png">
+      <LogicalName>optionmenu.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\progressbar.png">
+      <LogicalName>progressbar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\radiobutton.png">
+      <LogicalName>radiobutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\spinbutton.png">
+      <LogicalName>spinbutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\table.png">
+      <LogicalName>table.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\textview.png">
+      <LogicalName>textview.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\togglebutton.png">
+      <LogicalName>togglebutton.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\toolbar.png">
+      <LogicalName>toolbar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\treeview.png">
+      <LogicalName>treeview.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\vbox.png">
+      <LogicalName>vbox.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\vbuttonbox.png">
+      <LogicalName>vbuttonbox.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\vpaned.png">
+      <LogicalName>vpaned.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\vscrollbar.png">
+      <LogicalName>vscrollbar.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\window.png">
+      <LogicalName>window.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\status-critical">
+      <LogicalName>status-critical</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\status-noncritical">
+      <LogicalName>status-noncritical</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\status-none">
+      <LogicalName>status-none</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\status-normal">
+      <LogicalName>status-normal</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\status-wouldbenice">
+      <LogicalName>status-wouldbenice</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pixmaps\expander.png">
+      <LogicalName>expander.png</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Cairo" />
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Bindings, Version=4.5.0.0, Culture=neutral, PublicKeyToken=9723ae811757ae83" />
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <GtkDesignInfo generateGettext="False" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Sources\Attributes\" />
+    <Folder Include="Sources\CellRenderers\" />
+    <Folder Include="Sources\Factory\" />
+    <Folder Include="Sources\OtherWidgets\" />
+    <Folder Include="Sources\TreeModels\" />
+  </ItemGroup>
+</Project>

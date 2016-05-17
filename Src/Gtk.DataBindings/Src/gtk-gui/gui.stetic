@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/gtk-databind.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="Gtk.ExtraWidgets.DatePickerWindow" design-size="279 231">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes" />
+    <property name="TypeHint">Menu</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Decorated">False</property>
+    <property name="DestroyWithParent">True</property>
+    <signal name="ButtonPressEvent" handler="OnButtonPressEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox2">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <property name="BorderWidth">1</property>
+        <child>
+          <widget class="Gtk.Calendar" id="calendar">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="DisplayOptions">35</property>
+            <signal name="DaySelectedDoubleClick" handler="OnCalendar2DaySelectedDoubleClick" />
+            <signal name="DaySelected" handler="OnCalendar2DaySelected" />
+            <signal name="KeyReleaseEvent" handler="OnCalendarKeyReleaseEvent" />
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Gtk.ExtraWidgets.DateCalculatorWindow" design-size="400 63">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes" />
+    <property name="TypeHint">Menu</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Decorated">False</property>
+    <signal name="ButtonPressEvent" handler="OnButtonPressEvent" />
+    <signal name="KeyPressEvent" handler="OnKeyPressEvent" />
+    <signal name="KeyReleaseEvent" handler="OnKeyReleaseEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="Gtk.DataBindings.DataRadioGroup" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="box">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.RadioButton" id="RadioGroup">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">RadioGroup</property>
+            <property name="Active">True</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+            <property name="Group">group1</property>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
