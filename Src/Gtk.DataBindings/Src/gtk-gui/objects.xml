@@ -6,6 +6,7 @@
         <property name="Mappings" />
         <property name="InheritedBoundaryDataSource" />
         <property name="BoundaryMappings" />
+        <property name="Editable" />
       </itemgroup>
       <itemgroup label="IAdaptableContainer Properties">
         <property name="InheritedDataSource" />
